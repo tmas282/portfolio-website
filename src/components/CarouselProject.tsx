@@ -8,7 +8,11 @@ export default ({name, desc}: {name: string, desc: string}) => {
                     <button className="dark:bg-white dark:text-black bg-black text-white outline outline-offset-4 dark:outline-white outline-black
                     hover:dark:bg-black hover:dark:text-white hover:bg-white hover:text-black hover:dark:outline-black hover:outline-white
                     text-xl duration-300
-                    p-2 px-4 m-2 " type="button">
+                    p-2 px-4 m-2 scroll-smooth" onClick={(e) => {
+                        document.getElementById("projects")?.scrollIntoView({
+                            behavior: "smooth"
+                        })
+                    }}>
                         View more...
                     </button>
                 </div>
