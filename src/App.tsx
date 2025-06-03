@@ -1,4 +1,4 @@
-import { Carousel, Drawer, DrawerHeader, DrawerItems } from "flowbite-react"
+import { Carousel } from "flowbite-react"
 import Navbar from "./components/Navbar"
 import CarouselProject from "./components/CarouselProject"
 import { PROJECTS } from "./bootstrap/info"
