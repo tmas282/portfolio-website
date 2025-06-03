@@ -4,7 +4,6 @@ export type Skill = {
     type: SkillType
 }
 export enum SkillType {
-    FrontEnd,
-    BackEnd,
-    Languages,
+    FrontEnd = "Front-End",
+    BackEnd = "Back-End",
 }

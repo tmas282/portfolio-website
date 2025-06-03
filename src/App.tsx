@@ -1,9 +1,11 @@
 import { Carousel } from "flowbite-react"
 import Navbar from "./components/Navbar"
 import CarouselProject from "./components/CarouselProject"
-import { PROJECTS } from "./bootstrap/info"
+import { PROJECTS, SKILLS } from "./bootstrap/info"
 import Project from "./components/Project"
 import { useState } from "react"
+import { SkillType } from "./project/Skill"
+import Skill from "./components/Skill"
 export default () =>{
     const [projectsCount, setProjectsCount] = useState<number>(4);
     return(
@@ -26,7 +28,7 @@ export default () =>{
                                 return null
                             }
                             return(
-                                <Project name={v.name} desc={v.desc} skills={v.skills} downloadUrl={v.downloadUrl} key={v.name}/>
+                                <Project name={v.name} img={v.img} desc={v.desc} skills={v.skills} downloadUrl={v.downloadUrl} key={v.name}/>
                             )
                         })}
                     </div>
@@ -39,7 +41,25 @@ export default () =>{
                             View more...
                         </button>
                 </div>
-                {/*TODO: skills overview*/}
+                <br />
+                <div id="skills" className="w-full flex flex-col justify-center items-center">
+                    <h1 className="text-center text-5xl uppercase underline">Skills</h1>
+                    <br />
+                    {Object.values(SkillType).map((v, i) => {
+                        return(
+                            <div className="m-3 w-full flex flex-row justify-start items-start" key={i}>
+                                <h2 className="w-3/6 text-center text-3xl uppercase underline mt-3">{v}:</h2>
+                                <div className="grid grid-cols-2 w-2/6">
+                                    {SKILLS.filter((skill) => skill.type.toString() == v).map((v, i) => {
+                                        return(
+                                            <Skill name={v.name} img={v.img} type={v.type} key={i}/>
+                                        )
+                                    })}
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
                 {/*TODO: about me page and contact*/}
                 <br />
             </main>

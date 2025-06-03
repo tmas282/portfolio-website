@@ -14,12 +14,17 @@ export default () => {
                 Portfolio
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 dark:bg-white bg-black"></span>
             </a>
-            <a className="mx-2 group">
-                About me
+            <a className="mx-2 group" onClick={(e) => {
+                e.preventDefault()
+                document.getElementById("skills")?.scrollIntoView({
+                    behavior: "smooth"
+                })
+                }}>
+                Skills
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 dark:bg-white bg-black"></span>
             </a>
             <a className="mx-2 group">
-                Skills
+                About me
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 dark:bg-white bg-black"></span>
             </a>
             <a className="mx-2 group">

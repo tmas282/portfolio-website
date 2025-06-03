@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Badge, createTheme, Modal, ModalBody, ModalFooter, ModalHeader, ThemeProvider } from "flowbite-react";
+import { createTheme, Modal, ModalBody, ModalFooter, ModalHeader, ThemeProvider } from "flowbite-react";
 import type { Project } from "../project/Project";
 
-export default ({name, desc, skills, downloadUrl} : Project) => {
+export default ({name, img, desc, skills, downloadUrl} : Project) => {
     const [modalOpen, setModalOpen] = useState<boolean>(false)
     const modalTheme = createTheme({
         modal:{
@@ -43,12 +43,17 @@ export default ({name, desc, skills, downloadUrl} : Project) => {
                 <ModalHeader>{name}</ModalHeader>
                 <ModalBody>
                     <div>
+                        <img src={img} className="w-fit"/>
                         <p>{desc}</p>
                         {skills && 
                         <div className="flex flex-row gap-1">
-                            {skills.map((v) => {
+                            {skills.map((v, i) => {
                                 return(
-                                    <Badge color={window.matchMedia("(prefers-color-scheme: dark)") ? "gray" : "light"}>{v.name}</Badge>
+                                    <div className="flex flex-row gap-1 p-1 px-2 rounded-md
+                                    dark:bg-black bg-gray-200 dark:text-white text-black" key={i}>
+                                        <img className="size-4" src={v.img}/>
+                                        <span className="text-xs">{v.name}</span>
+                                    </div>
                                 )
                             })}
                         </div>
@@ -83,18 +88,11 @@ export default ({name, desc, skills, downloadUrl} : Project) => {
             </ThemeProvider>
             <div className="flex flex-col justify-center items-center m-3">
                 <span className="uppercase text-xl">{name}</span>
-                <span className="text-sm">
+                <div className="text-sm flex flex-row gap-3">
                     {skills?.map((v, i) => {
-                        if(skills.length - 1== i){
-                            return(
-                                v.name
-                            )
-                        }
-                        return(
-                            v.name + " && "
-                        )
+                        return <img className="size-5" src={v.img} key={i}/>
                     })}
-                </span>
+                </div>
                 <button className="group text-xl" onClick={() => {setModalOpen(true)}}>
                     See more...
                     <span className="block max-w-full group-hover:max-w-0 transition-all duration-500 h-[0.100rem] dark:bg-white bg-black"></span>
