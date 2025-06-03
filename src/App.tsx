@@ -43,7 +43,8 @@ export default () =>{
                 </div>
                 <br />
                 <div id="skills" className="w-full flex flex-col justify-center items-center">
-                    <h1 className="text-center text-5xl uppercase underline">Skills</h1>
+                    <h1 className="w-[100%] uppercase underline underline-offset-4 text-5xl text-center align-bottom mx-auto
+                    dark:text-white text-black">Skills</h1>
                     <br />
                     {Object.values(SkillType).map((v, i) => {
                         return(
