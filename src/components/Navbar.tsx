@@ -13,7 +13,7 @@ export default () => {
                 <div className="flex justify-between items-center h-16">
                     <a href="#home" className="font-mono text-xl font-bold text-white">
                         Tomás&nbsp;
-                        <span className="text-blue-500">Moreira</span>
+                        <span className="bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent">Moreira</span>
                     </a>
                     <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden" onClick={() => {
                         setIsMenuOpen(!isMenuOpen)
@@ -29,7 +29,7 @@ export default () => {
                 </div>
             </div>
         </nav>
-        <div className={`fixed top-0 left-0 w-full bg-gray-950/80 z-40 flex flex-col items-center justify-center
+        <div className={`fixed top-0 left-0 w-full bg-gray-950/95 z-40 flex flex-col items-center justify-center
             transition-all duration-300 ease-in-out 
             ${isMenuOpen ? "h-screen opacity-100 pointer-events-auto" : "h-0 opacity-0 pointer-events-none"}
         `}>
