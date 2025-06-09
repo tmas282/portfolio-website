@@ -3,6 +3,7 @@ import LoadingScreen from "./sections/LoadingScreen"
 import Navbar from "./components/Navbar"
 import Home from "./sections/Home"
 import About from "./sections/About"
+import Projects from "./sections/Projects"
 
 export default ()=>{
     const [isLoaded, setIsLoaded] = useState<boolean>(false)
@@ -15,6 +16,7 @@ export default ()=>{
                 <Navbar/>
                 <Home/>
                 <About/>
+                <Projects/>
             </div>
         </>
     )
