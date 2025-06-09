@@ -69,5 +69,14 @@ export const PROJECTS: Project[] = [
         ],
         link: "http://www.google.com"
     },
+    {
+        title: "Portfolio website",
+        description: "Dynamic portfolio website built with React, TypeScript, and Tailwind CSS, showcasing projects, skills, and experience with a modern, responsive UI and GitHub Pages deployment.",
+        skills: [
+            {name: "React.js", type: SkillType.FrontEnd},
+            {name: "Tailwind.css", type: SkillType.FrontEnd},
+        ],
+        link: "http://www.google.com"
+    },
 ]
 //Can you do 20/25 word description about this project? The description should catch the eye of a recruiter
