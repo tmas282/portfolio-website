@@ -1,0 +1,14 @@
+{
+  "short_name": "TM Portfolio",
+  "name": "Tomás Moreira Portfolio",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f3f4f6",
+  "background_color": "#0a0a0a"
+}
