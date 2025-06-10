@@ -3,7 +3,9 @@ import { SkillType, type Skill } from "../skill/Skill";
 export const SKILLS: Skill[] = [
     {name: "React.js", type: SkillType.FrontEnd},
     {name: "Tailwind.css", type: SkillType.FrontEnd},
+    {name: "Framer", type: SkillType.FrontEnd},
     {name: "Bootstrapp", type: SkillType.FrontEnd},
+    {name: "JQuery", type: SkillType.FrontEnd},
 
     {name: "Next.js", type: SkillType.BackEnd},
     {name: "Express.js", type: SkillType.BackEnd},

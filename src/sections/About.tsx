@@ -1,3 +1,4 @@
+import { motion } from "motion/react"
 import { ABOUT_DESCRIPTION, EDUCATION, WORK_EXPERIENCE } from "../bootstrap/about"
 import { SKILLS } from "../bootstrap/skills"
 import { SkillType } from "../skill/Skill"
@@ -5,7 +6,7 @@ import { SkillType } from "../skill/Skill"
 export default () => {
     return(
         <section id="about" className="min-h-screen flex items-center justify-center py-20">
-            <div className="max-w-3xl mx-auto px-4">
+            <motion.div className="max-w-3xl mx-auto px-4 transition-all duration-500 delay-500" initial={{opacity: 0, transform: "translateY(-40px)"}} whileInView={{opacity: 1, transform: "translateY(0px)"}}>
                 <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500
                 to-cyan-400 bg-clip-text text-transparent text-center">About me</h2>
                 <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
@@ -57,7 +58,7 @@ export default () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }

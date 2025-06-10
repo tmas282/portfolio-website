@@ -6,6 +6,11 @@ export default () => {
         document.body.style.overflow = isMenuOpen ? "hidden" : ""
     }, [isMenuOpen])
 
+    function redirectTo(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>){
+        e.preventDefault()
+        const url: URL = new URL(e.currentTarget.href)
+        document.getElementById(url.hash.substring(1))?.scrollIntoView({behavior: "smooth"})
+    }
     return(
         <>
         <nav className="fixed top-0 w-full z-40 bg-gray-950/80 backdrop-blur-lg border-b border-white/10 shadow-lg">
@@ -21,10 +26,10 @@ export default () => {
                         &#9776;
                     </div>
                     <div className="hidden md:flex items-center space-x-8">
-                        <a href="#home" className="text-gray-300 hover:text-white transition-colors">Home</a>
-                        <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
-                        <a href="#projects" className="text-gray-300 hover:text-white transition-colors">Projects</a>
-                        <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a>
+                        <a href="#home" className="text-gray-300 hover:text-white transition-colors" onClick={e => redirectTo(e)}>Home</a>
+                        <a href="#about" className="text-gray-300 hover:text-white transition-colors" onClick={e => redirectTo(e)}>About</a>
+                        <a href="#projects" className="text-gray-300 hover:text-white transition-colors" onClick={e => redirectTo(e)}>Projects</a>
+                        <a href="#contact" className="text-gray-300 hover:text-white transition-colors" onClick={e => redirectTo(e)}>Contact</a>
                     </div>
                 </div>
             </div>
@@ -41,23 +46,27 @@ export default () => {
             </button>
 
             <a href="#home" className={`text-2xl text-semibold text-white transform transition-transform duration-300
-            ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`} onClick={async () => {
+            ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`} onClick={async (e) => {
                 setIsMenuOpen(false)
+                redirectTo(e)
             }}>Home</a>
             <br />
             <a href="#about" className={`text-2xl text-semibold text-white transform transition-transform duration-300
-            ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`} onClick={async () => {
+            ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`} onClick={async (e) => {
                 setIsMenuOpen(false)
+                redirectTo(e)
             }}>About</a>
             <br />
             <a href="#projects" className={`text-2xl text-semibold text-white transform transition-transform duration-300
-            ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`} onClick={async () => {
+            ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`} onClick={async (e) => {
                 setIsMenuOpen(false)
+                redirectTo(e)
             }}>Projects</a>
             <br />
             <a href="#contact" className={`text-2xl text-semibold text-white transform transition-transform duration-300
-            ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`} onClick={async () => {
+            ${isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`} onClick={async (e) => {
                 setIsMenuOpen(false)
+                redirectTo(e)
             }}>Contact</a>
         </div>
         </>
