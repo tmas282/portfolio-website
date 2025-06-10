@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
 
-export default ({onComplete} : {onComplete: any}) => {
+export default ({onComplete} : {onComplete: CallableFunction}) => {
     const TEXT = "Tomás Moreira"
     const [text, setText] = useState<string>("")
     useEffect(()=>{
-        var index = 0
+        let index = 0
         const interval = setInterval(() => {
             setText(TEXT.substring(0, index))
             index++

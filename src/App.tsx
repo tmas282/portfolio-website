@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import LoadingScreen from "./sections/LoadingScreen"
 import Navbar from "./components/Navbar"
 import Home from "./sections/Home"
