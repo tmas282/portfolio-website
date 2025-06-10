@@ -1,11 +1,12 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import LoadingScreen from "./sections/LoadingScreen"
 import Navbar from "./components/Navbar"
 import Home from "./sections/Home"
 import About from "./sections/About"
 import Projects from "./sections/Projects"
+import Contact from "./sections/Contact"
 
-export default ()=>{
+export default () => {
     const [isLoaded, setIsLoaded] = useState<boolean>(false)
     return(
         <>
@@ -17,6 +18,7 @@ export default ()=>{
                 <Home/>
                 <About/>
                 <Projects/>
+                <Contact/>
             </div>
         </>
     )
