@@ -42,4 +42,5 @@ export const SKILLS: Skill[] = [
     
     {name: "Arduino", type: SkillType.Others},
     {name: "Unity", type: SkillType.Others},
+    {name: "ANTLR", type: SkillType.Others},
 ]

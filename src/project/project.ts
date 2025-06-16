@@ -4,5 +4,8 @@ export type Project = {
     title: string,
     description: string,
     skills: Skill[],
-    link: string | URL
+    links?: {
+        title: string, 
+        link:string | URL
+    }[]
 }

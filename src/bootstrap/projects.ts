@@ -10,7 +10,10 @@ export const PROJECTS: Project[] = [
             {name: "Express.js", type: SkillType.BackEnd},
             {name: "MySQL", type: SkillType.DB},
         ],
-        link: "http://www.google.com"
+        links: [{
+            title: "View Project →",
+            link: "/tmas282/projects/" + "SkinClock.zip"
+        }]
     },
     {
         title: "Cátia Marina Website",
@@ -21,7 +24,10 @@ export const PROJECTS: Project[] = [
             {name: "Next.js", type: SkillType.BackEnd},
             {name: "Firestore", type: SkillType.DB},
         ],
-        link: "http://www.google.com"
+        links: [{
+            title: "View Project →",
+            link: "/tmas282/projects/" + "Catia_Marina_Website.zip"
+        }]
     },
     {
         title: "Jogo Plataforma",
@@ -30,7 +36,10 @@ export const PROJECTS: Project[] = [
             {name: "C#", type: SkillType.Lang},
             {name: "Unity", type: SkillType.Others},
         ],
-        link: "http://www.google.com"
+        links: [{
+            title: "View Project →",
+            link: "/tmas282/projects/" + "Jogo_Plataforma.zip"
+        }]
     },
     {
         title: "Integrative Project 2nd Semester",
@@ -38,7 +47,10 @@ export const PROJECTS: Project[] = [
         skills: [
             {name: "Java", type: SkillType.Lang},
         ],
-        link: "http://www.google.com"
+        links: [{
+            title: "View Project →",
+            link: "/tmas282/projects/" + "Integrative_Project_2nd_Semester.zip"
+        }]
     },
     {
         title: "Integrative Project 3rd Semester",
@@ -49,7 +61,24 @@ export const PROJECTS: Project[] = [
             {name: "Oracle Express", type: SkillType.DB},
             {name: "Arduino", type: SkillType.Others},
         ],
-        link: "http://www.google.com"
+        links: [{
+            title: "View Project →",
+            link: "/tmas282/projects/" + "Integrative_Project_3rd_Semester.zip"
+        }]
+    },
+    {
+        title: "Integrative Project 4th Semester",
+        description: "Developed a full-stack, scalable drone show management system using Java, C, DSL, and simulation orchestration with CI/CD, DSL parsing, and real-time collision detection.",
+        skills: [
+            {name: "Java", type: SkillType.Lang},
+            {name: "C/C++", type: SkillType.Lang},
+            {name: "H2", type: SkillType.DB},
+            {name: "ANTLR", type: SkillType.Others},
+        ],
+        links: [{
+            title: "View Project →",
+            link: "/tmas282/projects/" + "Integrative_Project_4th_Semester.zip"
+        }]
     },
     {
         title: "Golo d'Or Bets",
@@ -59,7 +88,10 @@ export const PROJECTS: Project[] = [
             {name: "SciPy", type: SkillType.SciFi},
             {name: "NumPy", type: SkillType.SciFi},
         ],
-        link: "http://www.google.com"
+        links: [{
+            title: "View Project →",
+            link: "/tmas282/projects/" + "golo_dor_bets.zip"
+        }]
     },
     {
         title: "MDISC Minimum Spanning Tree",
@@ -67,7 +99,10 @@ export const PROJECTS: Project[] = [
         skills: [
             {name: "Java", type: SkillType.Lang},
         ],
-        link: "http://www.google.com"
+        links: [{
+            title: "View Project →",
+            link: "/tmas282/projects/" + "MDISC_Minimum_Spanning_Tree.zip"
+        }]
     },
     {
         title: "Portfolio website",
@@ -76,7 +111,6 @@ export const PROJECTS: Project[] = [
             {name: "React.js", type: SkillType.FrontEnd},
             {name: "Tailwind.css", type: SkillType.FrontEnd},
             {name: "Framer", type: SkillType.FrontEnd},
-        ],
-        link: "http://www.google.com"
+        ]
     },
 ]

@@ -23,7 +23,11 @@ export default () => {
                                     })}
                                 </div>
                                 <div className="flex justify-between items-center">
-                                    <a href={v.link.toString()} className="text-blue-400 hover:text-blue-300 transition-colors my-4">View Project →</a>
+                                    {v.links?.map((link) => {
+                                        return (
+                                            <a href={link.link.toString()} className="text-blue-400 hover:text-blue-300 transition-colors my-4">{link.title}</a>
+                                        )
+                                    })}
                                 </div>
                             </div>
                         )
