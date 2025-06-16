@@ -9,6 +9,7 @@ export const SKILLS: Skill[] = [
 
     {name: "Next.js", type: SkillType.BackEnd},
     {name: "Express.js", type: SkillType.BackEnd},
+    {name: "Spring", type: SkillType.BackEnd},
 
     {name: "Javascript", type: SkillType.Lang},
     {name: "Typescript", type: SkillType.Lang},
@@ -43,4 +44,5 @@ export const SKILLS: Skill[] = [
     {name: "Arduino", type: SkillType.Others},
     {name: "Unity", type: SkillType.Others},
     {name: "ANTLR", type: SkillType.Others},
+    {name: "Docker", type: SkillType.Others}
 ]

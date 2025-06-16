@@ -72,6 +72,7 @@ export const PROJECTS: Project[] = [
         skills: [
             {name: "Java", type: SkillType.Lang},
             {name: "C/C++", type: SkillType.Lang},
+            {name: "Spring", type: SkillType.BackEnd},
             {name: "H2", type: SkillType.DB},
             {name: "ANTLR", type: SkillType.Others},
         ],
