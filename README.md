@@ -1,54 +1,57 @@
-# React + TypeScript + Vite
+## 👋 Hi, I'm Tomás!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I'm a informatics engineer passionate about open-source, automation, and building impactful tools.
+Please check my portfolio website: https://tmas282.github.io/tmas282/ 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Skill Set
+### 🧩 Frontend
+- **React.js**
+- **Tailwind CSS**, **Framer Motion**
+- **Bootstrap**, **jQuery**
 
-## Expanding the ESLint configuration
+### 🧠 Backend
+- **Next.js**
+- **Express.js**
+- **Spring**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 💬 Programming Languages
+- **JavaScript**, **TypeScript**
+- **Python**
+- **PHP**
+- **Java**
+- **C**, **C++**
+- **C#**
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 🗄️ Databases
+- SQL: **MySQL**, **Oracle XE**, **H2**
+- NoSQL: **Firestore**, **MongoDB**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### ☁️ Cloud & DevOps
+- **Firebase**
+- **Google Cloud**
+- **Azure DevOps**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### ⚙️ VCS
+- **Git**, **GitHub**, **Bitbucket**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### 📚 Scientific & Data
+- **NumPy**
+- **SciPy**
+
+### 🧪 Other Cool Stuff
+- **Unity** (2D/3D game dev)
+- **Arduino** (hardware hacking, microcontrollers)
+- **ANTLR** (language parsing, compilers)
+- **Docker** (environment configuration)
+
+
+## 🖥️ OS Experience
+- **Windows**
+- **Linux**, **Ubuntu**
+
+## 📫 Contact Me
+
+- 📧 Email: [tomaspintomoreira28@gmail.com](mailto:tomaspintomoreira28@gmail.com)  
+- 📞 Phone: [+351 932 961 514](tel:+351932961514)
+- 💼 LinkedIn: [Tomás Moreira](https://www.linkedin.com/in/tomás-moreira-35a6011a1)
