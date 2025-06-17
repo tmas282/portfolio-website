@@ -32,6 +32,8 @@ export const SKILLS: Skill[] = [
 
     {name: "SciPy", type: SkillType.SciFi},
     {name: "NumPy", type: SkillType.SciFi},
+    {name: "Pandas", type: SkillType.SciFi},
+    {name: "matplotlib", type: SkillType.SciFi},
 
     {name: "Azure DevOps", type: SkillType.Cloud},
     {name: "Google Cloud", type: SkillType.Cloud},

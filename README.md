@@ -38,6 +38,8 @@ Please check my portfolio website: https://tmas282.github.io/tmas282/
 ### 📚 Scientific & Data
 - **NumPy**
 - **SciPy**
+- **Pandas**
+- **matplotlib**
 
 ### 🧪 Other Cool Stuff
 - **Unity** (2D/3D game dev)
