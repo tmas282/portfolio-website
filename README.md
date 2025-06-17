@@ -22,6 +22,7 @@ Please check my portfolio website: https://tmas282.github.io/tmas282/
 - **Java**
 - **C**, **C++**
 - **C#**
+- **Shell**, **Batch**, **Powershell**
 
 ### 🗄️ Databases
 - SQL: **MySQL**, **Oracle XE**, **H2**

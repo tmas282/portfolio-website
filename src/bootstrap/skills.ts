@@ -18,6 +18,8 @@ export const SKILLS: Skill[] = [
     {name: "Java", type: SkillType.Lang},
     {name: "C/C++", type: SkillType.Lang},
     {name: "C#", type: SkillType.Lang},
+    {name: "Shell/Batch", type: SkillType.Lang},
+    {name: "PowerShell", type: SkillType.Lang},
 
     {name: "SQL", type: SkillType.DB},
     {name: "MySQL", type: SkillType.DB},
